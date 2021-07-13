@@ -8,6 +8,18 @@ namespace TelCo.ColorCoder
     class findColorFromPairNumber
     {
         /// <summary>
+        /// data type defined to hold the two colors of clor pair
+        /// </summary>
+        internal class ColorPair
+        {
+            internal Color majorColor;
+            internal Color minorColor;
+            public override string ToString()
+            {
+                return string.Format("MajorColor:{0}, MinorColor:{1}", majorColor.Name, minorColor.Name);
+            }
+        }
+        /// <summary>
         /// Given a pair number function returns the major and minor colors in that order
         /// </summary>
         /// <param name="pairNumber">Pair number of the color to be fetched</param>
