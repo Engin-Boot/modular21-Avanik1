@@ -1,7 +1,6 @@
 using System;
 using System.Diagnostics;
 using System.Drawing;
-using colorsAvailable.cs;
 
 namespace TelCo.ColorCoder
 {
