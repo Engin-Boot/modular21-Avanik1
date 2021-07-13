@@ -33,12 +33,12 @@ namespace TelCo.ColorCoder
             Debug.Assert(testPair1.minorColor == Color.Green);
 
             ColorPair testPair2 = new ColorPair() { majorColor = Color.Yellow, minorColor = Color.Green };
-            pairNumber = findPairNumberFromColor.GetPairNumberFromColor(testPair2);
+            pairNumber = ColorPair.GetPairNumberFromColor(testPair2);
             Console.WriteLine("[In]Colors: {0}, [Out] PairNumber: {1}\n", testPair2, pairNumber);
             Debug.Assert(pairNumber == 18);
 
             testPair2 = new ColorPair() { majorColor = Color.Red, minorColor = Color.Blue };
-            pairNumber = findPairNumberFromColor.GetPairNumberFromColor(testPair2);
+            pairNumber = ColorPair.GetPairNumberFromColor(testPair2);
             Console.WriteLine("[In]Colors: {0}, [Out] PairNumber: {1}", testPair2, pairNumber);
             Debug.Assert(pairNumber == 6);
         }
