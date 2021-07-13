@@ -1,28 +1,21 @@
 using System;
+using System.Collections.Generic;
+using System.Text;
 using System.Diagnostics;
 using System.Drawing;
 
 namespace TelCo.ColorCoder
 {
-    class findPairNumberFromColor
+    class ColorPair
     {
-        /// <summary>
-        /// data type defined to hold the two colors of clor pair
-        /// </summary>
-        internal class ColorPair
+        internal Color majorColor;
+        internal Color minorColor;
+        
+        public override string ToString()
         {
-            internal Color majorColor;
-            internal Color minorColor;
-            public override string ToString()
-            {
-                return string.Format("MajorColor:{0}, MinorColor:{1}", majorColor.Name, minorColor.Name);
-            }
+            return string.Format("MajorColor:{0}, MinorColor:{1}", majorColor.Name, minorColor.Name);
         }
-        /// <summary>
-        /// Given the two colors the function returns the pair number corresponding to them
-        /// </summary>
-        /// <param name="pair">Color pair with major and minor color</param>
-        /// <returns></returns>
+        
         private static int GetPairNumberFromColor(ColorPair pair)
         {
             // Find the major color in the array and get the index
