@@ -16,11 +16,11 @@ namespace TelCo.ColorCoder
         /// <summary>
         /// Array of Major colors
         /// </summary>
-        private static Color[] colorMapMajor;
+        public static Color[] colorMapMajor;
         /// <summary>
         /// Array of minor colors
         /// </summary>
-        private static Color[] colorMapMinor;
+        public static Color[] colorMapMinor;
         /// <summary>
         /// Static constructor required to initialize static variable
         /// </summary>
