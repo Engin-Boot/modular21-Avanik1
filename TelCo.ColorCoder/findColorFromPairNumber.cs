@@ -8,7 +8,7 @@ namespace TelCo.ColorCoder
 {
     class findColorFromPairNumber
     {
-        private static ColorPair GetColorFromPairNumber(int pairNumber)
+        public static ColorPair GetColorFromPairNumber(int pairNumber)
         {
             // The function supports only 1 based index. Pair numbers valid are from 1 to 25
             int minorSize = colorMapMinor.Length;
